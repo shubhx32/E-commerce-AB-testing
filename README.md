@@ -2,7 +2,27 @@
 
 > **Goal:** Determine whether a redesigned landing page **significantly increases sign‑ups** compared with the current version, using principled A/B testing and statistical analysis.
 
----
+
+## º Method
+
+In order to achieve this, we use the data obtained from `A/B testing` and perform a `z-test` on it to determine if there is a statistically significant improvement due to implementation of the new page.
+
+
+## 🔎 Key insights:
+
+Based on this result, we should **not launch the new page** at this time, as the data does not support a meaningful improvement in conversion. The following insights can be derived from this analysis:
+- **No demonstrable improvement:** No demonstrable increase in conversion was observed and the new landing page **does not outperform** the current version.
+- **Goal realignment:** A stronger hypothesis is required for before any implementation is taken into consideration. In absence of strong uplift of conversion trends, user feedback, user retention time and heatmaps can be used to quantify the impact of the current redesign by the UX teams and to serve as guidelines for future changes.
+- **Segement sensitivity:** With > 290 k observations, statistical power is high; but sub-segments might hide value improvements. Significant improvements in particular segments can justify controlled rollouts as no drop in conversion suggests the new design is at least non‑harmful.
+
+
+## 📑 Business Decision
+
+Based on these insights, the following business decisions would be recommended:
+- **Park the global rollout** of the current redesign; reiterate the design and testing while keeping the control page live.
+- **Drill down by segment** to look for micro‑lifts that may merit targeted deployment.
+- **Refine hypotheses** test copy clarity, trust badges, or call‑to‑action placement—changes with historically larger effect sizes.
+- **Collect qualitative feedback** to understand why the redesign failed to move the needle via user interviews, heatmaps, user retention time, etc.
 
 ## 🗂 Project Structure
 
@@ -13,7 +33,6 @@
 | **assets/** | Final PDF summary and exported figures |
 | **requirements.txt** | Python package spec (create venv with `pip install -r requirements.txt`) |
 
----
 
 ## 📊 Dataset
 
@@ -27,7 +46,6 @@
   | `converted` | 1 if user sign‑up, else 0 |
   | `timestamp` | Visit date‑time |
 
----
 
 ## ⚙️ Quick‑start
 
