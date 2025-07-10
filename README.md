@@ -15,6 +15,8 @@ Based on this result, we should **not launch the new page** at this time, as the
 - **Goal realignment:** A stronger hypothesis is required for before any implementation is taken into consideration. In absence of strong uplift of conversion trends, user feedback, user retention time and heatmaps can be used to quantify the impact of the current redesign by the UX teams and to serve as guidelines for future changes.
 - **Segement sensitivity:** With > 290 k observations, statistical power is high; but sub-segments might hide value improvements. Significant improvements in particular segments can justify controlled rollouts as no drop in conversion suggests the new design is at least non‑harmful.
 
+![ERD Diagram](Assets/Null_distribution_av_line.png)
+
 
 ## 📑 Business Decision
 
